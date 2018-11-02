@@ -119,18 +119,33 @@ section {
   }
 }
 
+.card {
+  background-color: $tan;
+  border-bottom: solid #422a00 .4rem;
+
+}
+
 button {
+
   &.btn-link {
     color: $dark;
     text-decoration: none;
+
   }
   &.btn-link:hover {
     color: $dark;
   }
+
+  h2 {
+    font-size: 2rem;
+  }
+
 }
 
 .card-body{
-  color: black;
+  background-color: white;
+  color: $dark;
+  font-size: 1.5rem;
 }
 
 
