@@ -10,18 +10,36 @@ body {
   margin: 0;
   font-size: 1.8rem;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+
 }
 
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
+h2 {
+  font-size: 2.25rem;
+}
+
+a {
+  text-decoration: none;
+  color:  $brown;
+}
+
+a:hover {
+    color:  $brown;
+  }
+
+
+
 .navbar {
   background-image:  linear-gradient(
   rgba(255, 255, 255, 0.45),
   rgba(255, 255, 255, 0.45)
   ),url("./imgs/faith_steps_cover.jpg");
+
+  // background-color: white;
 
 }
 
@@ -60,6 +78,22 @@ section {
       }
     }
   }
+  &.social {
+    padding-top: 8rem;
+    padding-left: 55rem;
+    padding-right: 55rem;
+    display: flex;
+    justify-content: space-around;
+    font-size: 5rem;
+
+    a {
+      color: $dark;
+
+    }
+    a:hover {
+      color: $brown;
+    }
+  }
 
 }
 
@@ -75,7 +109,7 @@ section {
   align-items: center;
 
   h1{
-    font-weight: 400;
+    font-weight: 500;
     font-size:7rem;
     text-align: left;
   }
@@ -83,4 +117,58 @@ section {
   @media (max-width: 560px) {
     font-size: 5rem;
   }
+}
+
+button {
+  &.btn-link {
+    color: $dark;
+    text-decoration: none;
+  }
+  &.btn-link:hover {
+    color: $dark;
+  }
+}
+
+.card-body{
+  color: black;
+}
+
+
+.row-img {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create three equal columns that sits next to each other */
+.column-img {
+    -ms-flex: 33%; /* IE10 */
+    flex: 33%;
+    max-width: 33%;
+    padding: 0 4px;
+}
+
+.column-img img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column-img {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column-img {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
 }
